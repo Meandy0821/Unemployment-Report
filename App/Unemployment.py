@@ -1,11 +1,11 @@
 
-
-import requests
+import os
 import json
 from pprint import pprint
 
+import requests
 
-API_KEY = "demo"
+API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
 
 
 request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
@@ -17,5 +17,8 @@ print(type(parsed_response))
 pprint(parsed_response)
 
 
+# breakpoint()
 
+latest = parsed_response["data"][0]
+print(latest)
 
