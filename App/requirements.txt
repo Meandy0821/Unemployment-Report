@@ -1,0 +1,9 @@
+#requirements
+
+python-dotenv
+
+pandas
+
+requests
+
+plotly
