@@ -11,7 +11,11 @@ conda create -n unemployment-env python=3.9
 
 conda activate unemployment-env
 
+```
+
 Install package dependencies: 
+
+
 ```sh
 pip install -r requirements.txt
 ```
@@ -39,7 +43,21 @@ python app/my_script.py
 Run the unemployment report:
 
 ```sh
-python app/Unemployment.py
+python -m app.unemployment
 
 ALPHAVANTAGE_API_KEY="____" python app/unemployment.py
-```''
+```
+
+run stocks report:
+
+```sh
+python -m app.stocks
+
+
+#testing
+
+Run tests:
+
+```sh
+pytests
+```
