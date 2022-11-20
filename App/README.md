@@ -86,4 +86,7 @@ Run tests:
 
 ```sh
 pytest
+
+export FLASK_APP=web_app
+flask run
 ```
